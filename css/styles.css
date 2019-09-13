@@ -1,0 +1,257 @@
+@import 'general.css';
+@import 'transition-classes.css';
+@import 'media-queries.css';
+
+header{
+    width: 100%;
+    height: 100vh;
+
+    background: url('../img/bg-01.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+}
+main{
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px 0;
+}
+
+#contact-now{
+    transition: all .5s ease;
+
+    position: fixed;
+    top: 5px;
+    right: 5px;
+
+    box-sizing: content-box;
+
+    z-index: 10;
+    
+    background: linear-gradient(135deg, rgb(191, 152, 26) 0%,rgb(216, 90, 24) 100%);
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+
+    border: none;
+}
+#contact-now:hover{
+padding:  10px 20px;
+font-size: 20px;
+}
+
+.logo{
+    z-index: 2;
+    width: 50px;
+    margin: 5px;
+}
+.header-grab{
+    font-size: 3.5em;
+
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+}
+.header-company-name{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    color: #fff;
+}
+.grab-highlight{
+    font-weight: bolder;
+    color: #ffaf36;
+}
+
+/* Offset-Info Section */
+#offset-info{
+    width: 100%;
+
+    display: flex;
+}
+#offset-info *{
+    transition: all .5s ease;
+}
+.card{
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: none !important;
+}
+.card-info{
+    height: 175px;
+
+    padding: 10px;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+/* .card-info:hover{
+    height: 400px;
+} */
+.card-img{
+    height: 100%;
+    justify-self: stretch;
+    background-color: aqua;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    
+}
+.card-img-reverse{
+    height: 100%;
+    justify-self: stretch;
+    background-color: aqua;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.card-arrow-left{
+    width: 50%;
+    height: 0;
+    border-top: 25px solid white;
+    border-left: 25px solid transparent;
+
+    position: absolute;
+    top: 0;
+
+    right: 0;
+}
+.card-arrow-right{
+    width: 50%;
+    height: 0;
+    border-top: 25px solid white;
+    border-right: 25px solid transparent;
+
+    position: absolute;
+    top: 0;
+
+    left: 0;
+}
+.card-arrow-reverse-left{
+    width: 50%;
+    height: 0;
+    border-bottom: 25px solid white;
+    border-left: 25px solid transparent;
+
+    position: absolute;
+    bottom: 0;
+
+    right: 0;
+}
+.card-arrow-reverse-right{
+    width: 50%;
+    height: 0;
+    border-bottom: 25px solid white;
+    border-right: 25px solid transparent;
+
+    position: absolute;
+    bottom: 0;
+
+    left: 0;
+}
+#card-img-1{
+    background: url('../img/free-stock.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+#card-img-2{
+    background: url('../img/dedicated-spec.jpg');
+    background-size: cover;
+    background-position: top;
+}
+#card-img-3{
+    background: url('../img/transfer.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* About */
+.about h2{
+    text-align: center;
+}
+.about h3{
+    font-weight: 1000
+}
+.about-flex{ 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about-section{
+    width: 400px;
+    margin: 10px;
+}
+
+
+/* Product */
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 0px;
+}
+.product h2{
+    margin-bottom: 0px;
+}
+
+
+/* Product Cards */
+#product-cards{
+    width: 100%;
+
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    color: #fff;
+}
+.product-card{
+    width: calc(33% - 40px);
+    min-width: 290px;
+    padding: 40px;
+    margin: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(135deg, rgb(191, 152, 26) 0%,rgb(216, 90, 24) 100%);
+    border-radius: 10px;
+    
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2)
+}
+.product-card p{
+    font-size: 1em;
+    text-indent: 30px;
+}
+
+/* Contact */
+.contact{
+    margin: 0 20px;
+}
+.send{
+    /* background: linear-gradient(90deg, rgba(51, 138, 249,0),rgba(1, 207, 214,0)); */
+    background: rgba(216, 90, 24,0);
+    transition: all .3s ease;
+}
+.send:hover{
+    /* background: linear-gradient(90deg, rgba(51, 138, 249,1),rgba(1, 207, 214,1)); */
+    background: rgba(216, 90, 24,1);
+    color: #fff;
+}
